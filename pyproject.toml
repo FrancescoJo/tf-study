@@ -1,0 +1,17 @@
+package-mode = false
+
+[project]
+name = "francescojo-tf-study"
+version = "0.1.0"
+description = "Practice for AI/ML Development"
+readme = "README.adoc"
+requires-python = ">=3.11"
+
+dependencies = [
+    "matplotlib==3.10.0",
+    "numpy==1.26.4",
+    "tensorflow==2.16.1",
+    "tensorrt>=10",
+    "tensorrt-cu12>=10.7.0",
+    "tensorrt-cu12-libs>=10.7.0"
+]

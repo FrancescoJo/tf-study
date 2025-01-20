@@ -1,0 +1,16 @@
+How to create a virtual Python environment and installing project dependencies
+
+[source, shell]
+----
+$ poetry lock
+$ poetry install --no-root
+----
+
+Running script file
+
+[source, shell]
+----
+$ ./z.sh <target script file>
+----
+
+Scheduled to migrate from `poetry` to `uv`
