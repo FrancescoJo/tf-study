@@ -10,7 +10,9 @@ if [ ! -f "$1" ]; then
 fi
 
 poetry lock && poetry install --no-root
-TF_ENABLE_ONEDNN_OPTS=0 # Option to disable one DNN library which prevents GPU usage \
-poetry run python3 "$1"
+
+# TF_ENABLE_ONEDNN_OPTS=0 : Option to disable one DNN library which prevents GPU usage \
+TF_ENABLE_ONEDNN_OPTS=0 \
+    poetry run python3 "$1"
 
 exit 0
